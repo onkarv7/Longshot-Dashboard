@@ -1,0 +1,98 @@
+/* complete navbar  */
+nav .logo {
+    min-width: 50px;
+    /* background-color: red; */
+}
+
+
+.project{
+    background-color:#D3D3D3;
+    width: 200px;
+    height: 50px;
+    display: flex !important;
+    flex-direction: column !important;
+padding: 0.7rem;
+padding-left: 1.5rem;
+}
+
+
+/* sidenav */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: var(--panel-color);
+    padding: 10px 14px;
+}
+
+/* Logo  */
+
+nav .logo img {
+    width:180px;
+    object-fit: cover;
+}
+
+
+/* Dashboard menu elememts */
+
+.menu-items {
+    background-color: white;
+    /* margin-top: 10px; */
+    height: calc(100% - 45px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-items li {
+    list-style: none;
+}
+
+.menu-items li a {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    text-decoration: none;
+    padding-left: 1rem;
+}
+
+.manu-items li a i {
+    font-size: 24px;
+    min-width: 45px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 1rem;
+
+
+}
+
+.menu-items li a .link-name {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--black-light-color);
+    padding-left: 1rem;
+}
+
+.nav-links li a:hover i,
+.nav-links li a:hover .link-name {
+    color: var(--primary-color);
+}
+
+
+.sub-menu {
+    margin-left: 0.4rem;
+}
+
+.project-end{
+    background-color:#D3D3D3;
+    width: 200px;
+    height: 120px;
+    display: flex !important;
+    flex-direction: column !important;
+padding: 0.7rem;
+padding-left: 1.5rem;
+}
