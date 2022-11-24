@@ -39,7 +39,7 @@ const Navbar = () => {
                 <i>
                   <FcGrid />
                 </i>
-                <span className="link-name">Dashboard</span>
+                <span className="link-name link1">Dashboard</span>
               </a>
             </li>
 
@@ -98,7 +98,7 @@ const Navbar = () => {
                   <i className=" sub-menu">
                     <FcVoicemail />
                   </i>
-                  <span className="link-name sub-menu">Semrush</span>
+                  <span className="link-name ">Semrush</span>
                 </a>
               </li>
             </li>

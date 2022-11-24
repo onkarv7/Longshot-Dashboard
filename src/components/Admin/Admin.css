@@ -1,19 +1,44 @@
 .grid-box {
-    margin-left: 40rem;
+    /* margin-left: 40rem; */
     height: 100%;
-    width: 600px;
-    /* background-color:grey; */
-    margin-right: 15rem;
+  
     padding-top: 2rem;
     display: grid;
-    grid-template-columns: 330px 350px;
+    /* grid-template-columns: 330px 350px; */
+
+    justify-content: end; 
+
+    grid-template-columns: repeat(auto-fit , minmax(250px, 480px));
     grid-template-rows: 100px 100px 100px;
     grid-row-gap: 1rem;
     grid-column-gap: 1rem;
+  
 }
-.container{
+
+/* complete navbar  */
+.logo {
+    min-width: 50px;
+    /* background-color: red; */
+    position: absolute;
+    left: 0;
+background-color: whitesmoke;
+border: none;
+border-radius: 50px;
+}
+/* Logo  */
+
+.logo img {
+    width: 180px;
+    object-fit: cover;
+}
+
+
+
+.container {
     margin-left: 18rem;
-     margin-top: 2rem;
+    margin-top: 2rem;
+    /* background-color: red; */
+   
 }
 
 .grid-items {
@@ -21,6 +46,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     padding: 1.2rem;
+    background-color: white;
 }
 
 
@@ -29,11 +55,10 @@
     grid-row: span 3;
 
 }
-
-.grid2 {
-    background-color: white;
-
+.grid2{
+    background-color: white; 
 }
+
 
 .grid3 {
     background-color: white;
@@ -53,7 +78,7 @@
     background-color: white;
     grid-column: span 2;
     padding: 1rem;
- 
+
 }
 
 .grid5 span {
@@ -71,47 +96,109 @@
     grid-column: span 2;
 }
 
-.line{
+.line {
     margin-top: 1rem;
 }
+
 /* bg: "#FCE081", text: "#A75800", hover: "#ffca6e" */
-.commercial-text{
+.commercial-text {
     height: 30px;
     width: 100px;
     border-radius: 50px;
     background-color: #FCE081;
     text-align: center;
-    color:#A75800 ;
+    color: #A75800;
     padding-top: 0.3rem;
-   }
-   .commercial-text:hover{
-    background-color:#ffca6e ;
-   }
+}
+
+.commercial-text:hover {
+    background-color: #ffca6e;
+}
 
 
-   .grey{
+.grey {
     color: gray;
-   }
+}
 
-   .keyword{
+.keyword {
     margin-top: 1rem;
-   }
+    
+}
 
-   .add-list{
-float: right;
-width: 80px;
-height: 22px;
-border-radius: 5px;
-background-color: #6E72FC;
-color: white;
-   }
+.add-list {
+    float: right;
+    width: 80px;
+    height: 22px;
+    border-radius: 5px;
+    background-color: #6E72FC;
+    color: white;
+}
 
-   @media (max-width: 375px) {
-    .grid-box{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-   
+@media (max-width: 375px) {
+ 
+}
+
+@media only screen and (max-device-width: 480px) {
+    .grid-box {
+        /* grid-template-columns: 120px 120px; */
+        /* grid-template-columns: repeat(auto-fit, 186px); */
+        grid-template-columns: repeat(auto-fit , minmax(180px, 330px));
+  grid-row-gap: 0;
+  grid-column-gap: 0;
+        /* grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); */
+        /* align-content: center;
+        align-items: center; */
+        justify-content: center;
+        /* margin-left: -40rem; */
     }
-  }
+    .container {
+        margin-left: 2rem;
+        /* margin-top: 2rem; */
+        display: grid;
+        justify-content: start;
+        margin-left: 0 !important;
+    }
+    .grid1{
+        margin-top: 1rem;
+    }
+}
+@media only screen and (max-device-width: 320px) {
+    .grid-box {
+        /* grid-template-columns: 120px 120px; */
+        /* grid-template-columns: repeat(auto-fit, 186px); */
+        grid-template-columns: repeat(auto-fit , minmax(70px, 230px));
+  /* grid-row-gap: 0; */
+  /* grid-column-gap: 0; */
+        /* grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); */
+        /* align-content: center;
+        align-items: center; */
+        justify-content: center;
+        /* margin-left: -40rem; */
+        margin-right: -1rem;
+        margin-top: 2rem;
+    }
+/* .logo{
+    position: relative;
+    top: 0;
+    margin-left: 3.3rem;
+} */
+}
+@media only screen and (max-device-width: 500px) {
 
+.logo{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    margin-left: 3.3rem;
+}.container{
+   width: 400px;
+}
+}
+@media only screen and (min-device-width: 1024px) {
+
+    .logo{
+        display: none;
+     
+    }
+    }

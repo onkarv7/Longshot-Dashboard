@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import "./Admin.css";
 import Table from "./Table";
 
 const Admin = () => {
+
+
+const[show , setShow] = useState(false)
+
   return (
     <div>
-      <Navbar />
-      <div className="container" style={{  }}>
+    {show ?  <Navbar /> : null}
+     
+      
+      <div className="container" >
+      <button    onClick={() => setShow(true)} className="logo">
+          <img  src="/logo.jpg" alt="" />
+        </button>
         <h6><span className="grey">Keyword Explorer</span>  : Keyword Overview</h6>
         <h3 className="keyword">Keyword :<span className="grey"> Shopping in Barcelona</span> </h3>
         <h6> Database :United States 🇺🇸</h6>

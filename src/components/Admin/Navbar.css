@@ -2,6 +2,13 @@
 nav .logo {
     min-width: 50px;
     /* background-color: red; */
+
+}
+/* Logo  */
+
+nav .logo img {
+    width: 180px;
+    object-fit: cover;
 }
 
 
@@ -15,6 +22,7 @@ nav .logo {
     padding-left: 1.5rem;
     border-radius: 10px;
     border: none;
+   
 }
 
 
@@ -27,14 +35,10 @@ nav {
     width: 250px;
     background-color: var(--panel-color);
     padding: 10px 14px;
+   
 }
 
-/* Logo  */
 
-nav .logo img {
-    width: 180px;
-    object-fit: cover;
-}
 
 
 /* Dashboard menu elememts */
@@ -46,6 +50,7 @@ nav .logo img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* background-color: red; */
 }
 
 .menu-items li {
@@ -58,6 +63,8 @@ nav .logo img {
     height: 40px;
     text-decoration: none;
     padding-left: 1rem;
+    padding-top: 1rem;
+    /* background-color: red; */
 }
 
 .manu-items li a i {
@@ -107,9 +114,10 @@ nav .logo img {
 
 .add-btn{
 
-    background-color:rgb(144, 238, 144);
-    border-radius: 10px;
+    background-color:rgba(144, 238, 144,1);
+    border-radius: 4px;
     color: black;
+    cursor: pointer;
 }
 
 .add-btn:hover{
@@ -119,3 +127,16 @@ nav .logo img {
 .logo1{
     width: 2rem;
 }
+
+
+@media only screen and (max-width: 1024px) {
+   nav{
+    display: none;
+   }
+}
+/* @media only screen and (max-width: 480px) {
+    nav{
+     display: none;
+    }
+ }
+  */
