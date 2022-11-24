@@ -5,14 +5,16 @@ nav .logo {
 }
 
 
-.project{
-    background-color:#D3D3D3;
+.project {
+    background-color: #d3d3d3;
     width: 200px;
     height: 50px;
     display: flex !important;
     flex-direction: column !important;
-padding: 0.7rem;
-padding-left: 1.5rem;
+    padding: 0.3rem;
+    padding-left: 1.5rem;
+    border-radius: 10px;
+    border: none;
 }
 
 
@@ -30,7 +32,7 @@ nav {
 /* Logo  */
 
 nav .logo img {
-    width:180px;
+    width: 180px;
     object-fit: cover;
 }
 
@@ -84,15 +86,36 @@ nav .logo img {
 
 
 .sub-menu {
-    margin-left: 0.4rem;
+    margin-left: 1rem;
 }
 
-.project-end{
-    background-color:#D3D3D3;
+.project-end {
+    background-color: #d7e4f1;
     width: 200px;
-    height: 120px;
+    height: 140px;
     display: flex !important;
     flex-direction: column !important;
-padding: 0.7rem;
-padding-left: 1.5rem;
+    justify-content: space-between;
+    padding: 0.7rem;
+    padding-left: 1.2rem;
+    border-radius: 10px;
+    /* align-items: center; */
+    text-align: start;
+
+}
+
+
+.add-btn{
+
+    background-color:rgb(144, 238, 144);
+    border-radius: 10px;
+    color: black;
+}
+
+.add-btn:hover{
+    background-color:rgba(144, 238, 144,0.6);
+}
+
+.logo1{
+    width: 2rem;
 }

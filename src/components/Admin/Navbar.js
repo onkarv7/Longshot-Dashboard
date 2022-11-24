@@ -1,6 +1,21 @@
 import React from "react";
 
 import "./Navbar.css";
+import {
+  FcPrevious,
+  FcEnteringHeavenAlive,
+  FcStatistics,
+  FcPaid,
+  FcServiceMark,
+  FcParallelTasks,
+  FcGrid,
+  FcLike,
+  FcTemplate,
+  FcVoicemail,
+  FcSurvey,
+  FcKindle,
+  FcPodiumWithSpeaker,
+} from "react-icons/fc";
 
 const Navbar = () => {
   return (
@@ -11,57 +26,61 @@ const Navbar = () => {
         </div>
 
         <div className="menu-items">
-       
-      
-
-
           <ul className="nav-links">
-
-          <div className="project">
-              <div >
-            
-               
+            <div className="project">
+              <div>
+                <p>Project</p>
                 <h4>My First Project</h4>
               </div>
             </div>
 
-
-
             <li>
               <a href="#">
-                <i className="uil uil-estate"></i>
+                <i>
+                  <FcGrid />
+                </i>
                 <span className="link-name">Dashboard</span>
               </a>
             </li>
 
             <li>
               <a href="#">
-                <i className="uil uil-estate"></i>
+                <i>
+                  <FcPodiumWithSpeaker />
+                </i>
                 <span className="link-name">Recipes</span>
               </a>
             </li>
-            <hr />
+            <hr  style={{marginTop :  '0.7rem',marginBottom :  '0.7rem'}} />
             <li>
               <a href="#">
-                <i className="uil uil-estate"></i>
+                <i>
+                  <FcKindle />
+                </i>
                 <span className="link-name">Blog</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <i className="uil uil-estate"></i>
+                <i>
+                  <FcTemplate />
+                </i>
                 <span className="link-name">Templates</span>
               </a>
 
               <li>
                 <a href="#">
-                  <i className="uil uil-estate sub-menu"></i>
+                  <i className="sub-menu">
+                    <FcLike />
+                  </i>
                   <span className="link-name">Favourites</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i className="uil uil-estate sub-menu"></i>
+                  <i className=" sub-menu">
+                    <FcSurvey />
+                  </i>
                   <span className="link-name">Custome Template</span>
                 </a>
               </li>
@@ -69,12 +88,16 @@ const Navbar = () => {
 
             <li>
               <a href="#">
-                <i className="uil uil-estate"></i>
+                <i>
+                  <FcParallelTasks />
+                </i>
                 <span className="link-name">Integrations</span>
               </a>
               <li>
                 <a href="#">
-                  <i className="uil uil-estate sub-menu"></i>
+                  <i className=" sub-menu">
+                    <FcVoicemail />
+                  </i>
                   <span className="link-name sub-menu">Semrush</span>
                 </a>
               </li>
@@ -82,20 +105,41 @@ const Navbar = () => {
           </ul>
 
           <ul className="logout-mod">
-          <div className="project-end">
-           
-           
-                <p style={{fontWeight:700}} >Kritikalpa.saha</p>
-                <h6 style={{fontWeight:500}} >Credit Used 313.2</h6>
-              <button><i></i><span>Change Plan</span></button>
-              <div><i></i><span>Product Roadmap</span></div>
-              <div><i></i><span>What's New?</span></div>
-            
+            <div className="project-end">
+              <li style={{ fontWeight: 700 }}>
+                <i>
+                  <FcServiceMark className="logo2" />
+                </i>
+                Kritikalpa.saha
+              </li>
+              <li style={{ fontWeight: 500, paddingLeft: "1.5rem" }}>
+                Credit Used 313.2
+              </li>
+              <button className="add-btn">
+                <i>
+                  <FcPaid className="logo1" />
+                </i>
+                <span>Change Plan</span>
+              </button>
+              <li>
+                <i>
+                  <FcStatistics className="logo1" />
+                </i>
+                <span>Product Roadmap</span>
+              </li>
+              <li>
+                <i>
+                  <FcEnteringHeavenAlive className="logo1" />
+                </i>
+                <span>What's New?</span>
+              </li>
             </div>
 
             <li>
               <a href="#">
-                <i className="uil uil-estate"></i>
+                <i>
+                  <FcPrevious className="logo1" />
+                </i>
                 <span className="link-name">Collapse</span>
               </a>
             </li>
