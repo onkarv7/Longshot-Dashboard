@@ -4,6 +4,7 @@ nav .logo {
     /* background-color: red; */
 
 }
+
 /* Logo  */
 
 nav .logo img {
@@ -15,14 +16,15 @@ nav .logo img {
 .project {
     background-color: #d3d3d3;
     width: 200px;
-    height: 50px;
+    height: 70px;
     display: flex !important;
     flex-direction: column !important;
     padding: 0.3rem;
     padding-left: 1.5rem;
     border-radius: 10px;
     border: none;
-   
+
+    text-decoration: none;
 }
 
 
@@ -35,13 +37,9 @@ nav {
     width: 250px;
     background-color: var(--panel-color);
     padding: 10px 14px;
-   
+
     /* background-color: red; */
 }
-
-
-
-
 /* Dashboard menu elememts */
 
 .menu-items {
@@ -76,10 +74,7 @@ nav {
     justify-content: center;
     background-color: white;
     padding: 1rem;
-
-
 }
-
 .menu-items li a .link-name {
     font-size: 18px;
     font-weight: 400;
@@ -100,7 +95,7 @@ nav {
 .project-end {
     background-color: #d7e4f1;
     width: 200px;
-    height: 140px;
+    height: 180px;
     display: flex !important;
     flex-direction: column !important;
     justify-content: space-between;
@@ -113,31 +108,25 @@ nav {
 }
 
 
-.add-btn{
+.add-btn {
 
-    background-color:rgba(144, 238, 144,1);
+    background-color: rgba(144, 238, 144, 1);
     border-radius: 4px;
     color: black;
     cursor: pointer;
 }
 
-.add-btn:hover{
-    background-color:rgba(144, 238, 144,0.6);
+.add-btn:hover {
+    background-color: rgba(144, 238, 144, 0.6);
 }
 
-.logo1{
+.logo1 {
     width: 2rem;
 }
 
 /* 1024 */
 @media only screen and (max-width: 1024px) {
-   nav{
-    display: none;
-   }
-}
-/* @media only screen and (max-width: 480px) {
-    nav{
-     display: none;
+    nav {
+        display: none;
     }
- }
-  */
+}

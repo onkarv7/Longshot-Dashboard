@@ -4,23 +4,26 @@ import "./Admin.css";
 import Table from "./Table";
 
 const Admin = () => {
-
-
-const[show , setShow] = useState(false)
+  const [show, setShow] = useState(false);
 
   return (
     <div>
-    {/* {show ?  : null} */}
-     
-    <Navbar /> 
-      <div className="container" >
-      <button
-          // onClick={() => setShow(true)} 
-      className="logo2">
-          <img  src="/logo.jpg" alt="" />
+      {/* {show ?  : null} */}
+
+      <Navbar />
+      <div className="container">
+        <button
+          // onClick={() => setShow(true)}
+          className="logo2"
+        >
+          <img src="/logo.jpg" alt="" />
         </button>
-        <h6><span className="grey">Keyword Explorer</span>  : Keyword Overview</h6>
-        <h3 className="keyword">Keyword :<span className="grey"> Shopping in Barcelona</span> </h3>
+        <h6>
+          <span className="grey">Keyword Explorer</span> : Keyword Overview
+        </h6>
+        <h3 className="keyword">
+          Keyword :<span className="grey"> Shopping in Barcelona</span>{" "}
+        </h3>
         <h6> Database :United States 🇺🇸</h6>
         <hr className="line" />
       </div>
@@ -31,7 +34,6 @@ const[show , setShow] = useState(false)
           <hr />
           <p>Keyboard Difficulty</p>
           <h2>46%</h2>
-          {/* <a href="https://icons8.com/icon/19875/loader"></a> */}
           <p>Possible</p>
           <p>
             Slightly more competition. you'll need well-structured and unique
@@ -57,17 +59,17 @@ const[show , setShow] = useState(false)
           </p>
         </div>
         <div className="grid5">
-         <button>Broad Match</button>
+          <button>Broad Match</button>
           <button>Related</button>
           <button>Questions</button>
-       
-        <button className="add-list" >Add to list</button>
+
+          <button className="add-list">Add to list</button>
         </div>
 
         {/* Tables  */}
         <div className="grid6">
           {" "}
-         <Table />
+          <Table />
         </div>
       </div>
     </div>

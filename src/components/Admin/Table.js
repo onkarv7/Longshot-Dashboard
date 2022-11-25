@@ -1,16 +1,9 @@
-import React from 'react'
+import React from "react";
 import data from "../../data.json";
-
 import Box from "@mui/material/Box";
-
 import { DataGrid } from "@mui/x-data-grid";
 
-
-import { motion } from "framer-motion"
-
-
 const columns = [
- 
   {
     field: "Keyword",
     headerName: "Keyword",
@@ -169,21 +162,21 @@ const rows = [
 
 const Table = () => {
   return (
-    <div
-   
-    > <Box sx={{ height: 400, width: "100%" }}>
-    <DataGrid
-  
-      rows={rows}
-      columns={columns}
-      pageSize={7}
-      rowsPerPageOptions={[5]}
-      checkboxSelection
-      disableSelectionOnClick
-      experimentalFeatures={{ newEditingApi: true }}
-    />
-  </Box></div>
-  )
-}
+    <div>
+      {" "}
+      <Box sx={{ height: 400, width: "100%" }}>
+        <DataGrid
+          rows={rows}
+          columns={columns}
+          pageSize={7}
+          rowsPerPageOptions={[5]}
+          checkboxSelection
+          disableSelectionOnClick
+          experimentalFeatures={{ newEditingApi: true }}
+        />
+      </Box>
+    </div>
+  );
+};
 
 export default Table;
