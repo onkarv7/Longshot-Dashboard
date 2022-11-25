@@ -16,6 +16,9 @@ import {
   FcKindle,
   FcPodiumWithSpeaker,
 } from "react-icons/fc";
+// import { Link } from "@mui/material";
+
+import{Link} from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -29,8 +32,9 @@ const Navbar = () => {
           <ul className="nav-links">
             <div className="project">
               <div>
-                <p>Project</p>
-                <h4>My First Project</h4>
+              <Link to='/drag'> <p>Project</p>
+                <h4>My First Project</h4></Link>
+               
               </div>
             </div>
 

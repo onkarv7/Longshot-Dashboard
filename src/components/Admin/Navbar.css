@@ -36,6 +36,7 @@ nav {
     background-color: var(--panel-color);
     padding: 10px 14px;
    
+    /* background-color: red; */
 }
 
 
@@ -128,7 +129,7 @@ nav {
     width: 2rem;
 }
 
-
+/* 1024 */
 @media only screen and (max-width: 1024px) {
    nav{
     display: none;

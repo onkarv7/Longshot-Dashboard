@@ -5,47 +5,51 @@ import Box from "@mui/material/Box";
 
 import { DataGrid } from "@mui/x-data-grid";
 
+
+import { motion } from "framer-motion"
+
+
 const columns = [
-  // { field: "id", headerName: "ID", width: 50 },
+ 
   {
     field: "Keyword",
     headerName: "Keyword",
-    width: 150,
+    width: 300,
     editable: true,
   },
   {
     field: "Volume",
     headerName: "volume",
     type: "number",
-    width: 100,
+    width: 120,
     editable: true,
   },
   {
     field: "KD",
     headerName: "KD %",
     type: "number",
-    width: 100,
+    width: 120,
     editable: true,
   },
   {
     field: "CPC",
     headerName: "CPC(USD)",
     type: "number",
-    width: 90,
+    width: 100,
     editable: true,
   },
   {
     field: "COM",
     headerName: "COM.",
     type: "number",
-    width: 100,
+    width: 120,
     editable: true,
   },
   {
     field: "Result",
     headerName: "Results",
     type: "number",
-    width: 100,
+    width: 120,
     editable: true,
   },
   {
@@ -55,22 +59,13 @@ const columns = [
     width: 50,
     editable: true,
   },
-
-  // {
-  //   field: "fullName",
-  //   headerName: "Full name",
-  //   description: "This column has a value getter and is not sortable.",
-  //   sortable: false,
-  //   width: 160,
-  //   valueGetter: (params) =>
-  //     `${params.row.firstName || ""} ${params.row.lastName || ""}`,
-  // },
 ];
 
 const rows = [
   {
     id: 1,
     lastName: "Snow",
+    // Intent : ,
     Keyword: "shopping in barcelona",
     age: 35,
     Volume: 480,
@@ -174,8 +169,11 @@ const rows = [
 
 const Table = () => {
   return (
-    <div> <Box sx={{ height: 400, width: "100%" }}>
+    <div
+   
+    > <Box sx={{ height: 400, width: "100%" }}>
     <DataGrid
+  
       rows={rows}
       columns={columns}
       pageSize={7}
@@ -188,4 +186,4 @@ const Table = () => {
   )
 }
 
-export default Table
+export default Table;

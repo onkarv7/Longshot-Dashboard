@@ -16,7 +16,7 @@
 }
 
 /* complete navbar  */
-.logo {
+.logo2 {
     min-width: 50px;
     /* background-color: red; */
     position: absolute;
@@ -27,7 +27,7 @@ border-radius: 50px;
 }
 /* Logo  */
 
-.logo img {
+.logo2 img {
     width: 180px;
     object-fit: cover;
 }
@@ -185,7 +185,7 @@ border-radius: 50px;
 }
 @media only screen and (max-device-width: 500px) {
 
-.logo{
+.logo2{
     display: flex;
     justify-content: center;
     position: relative;
@@ -197,7 +197,7 @@ border-radius: 50px;
 }
 @media only screen and (min-device-width: 1024px) {
 
-    .logo{
+    .logo2{
         display: none;
      
     }

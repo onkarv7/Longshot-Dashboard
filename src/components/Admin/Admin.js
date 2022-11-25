@@ -10,11 +10,13 @@ const[show , setShow] = useState(false)
 
   return (
     <div>
-    {show ?  <Navbar /> : null}
+    {/* {show ?  : null} */}
      
-      
+    <Navbar /> 
       <div className="container" >
-      <button    onClick={() => setShow(true)} className="logo">
+      <button
+          // onClick={() => setShow(true)} 
+      className="logo2">
           <img  src="/logo.jpg" alt="" />
         </button>
         <h6><span className="grey">Keyword Explorer</span>  : Keyword Overview</h6>
